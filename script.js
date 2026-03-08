@@ -1,19 +1,19 @@
 console.log("Madras Driven site ready");
 
-/* loader */
+/* loader fade out */
 
-window.addEventListener("load",function(){
+window.addEventListener("load", () => {
 
-setTimeout(function(){
+const loader = document.getElementById("loader");
 
-document.getElementById("loader").style.opacity="0";
+setTimeout(() => {
 
-setTimeout(function(){
+loader.style.opacity = "0";
 
-document.getElementById("loader").style.display="none";
+setTimeout(() => {
+loader.style.display = "none";
+}, 600);
 
-},500);
+}, 1800);
 
-},2000);
-
-});;
+});
