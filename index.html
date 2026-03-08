@@ -12,6 +12,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 
 <body>
@@ -22,9 +24,9 @@
 
 <nav>
 <a href="#">Home</a>
-<a href="#">Events</a>
-<a href="#">Gallery</a>
-<a href="#">Community</a>
+<a href="#events">Events</a>
+<a href="#gallery">Gallery</a>
+<a href="#community">Community</a>
 <a href="#">Join</a>
 </nav>
 
@@ -37,11 +39,13 @@
 <source src="assets/hero.mp4" type="video/mp4">
 </video>
 
+<div class="hero-overlay"></div>
+
 <div class="hero-content">
 
-<h1>Madras Driven</h1>
+<h1 class="hero-title">Madras Driven</h1>
 
-<p>Where Chennai’s Car Culture Comes Alive</p>
+<p class="hero-sub">Where Chennai’s Car Culture Comes Alive</p>
 
 <button>Explore Events</button>
 
@@ -50,50 +54,41 @@
 </section>
 
 
-<section class="about">
+<section class="about reveal" id="community">
 
 <h2>Driven by Passion</h2>
 
 <p>
 
-Madras Driven brings together the automotive community of Chennai through
-curated car meets, cruises, and motorsport experiences.
+Madras Driven connects enthusiasts across Chennai through
+curated car meets, cruises and motorsport events.
 
-From supercars to street builds, every machine has a story.
+Every car tells a story.
 
 </p>
 
 </section>
 
 
-<section class="events">
+<section class="events reveal" id="events">
 
 <h2>Upcoming Events</h2>
 
 <div class="event-grid">
 
 <div class="event-card">
-
 <h3>Cars & Cocoa</h3>
-
 <p>April 20 • Chennai</p>
-
 </div>
 
 <div class="event-card">
-
 <h3>Sunday Cruise</h3>
-
 <p>May 5 • ECR</p>
-
 </div>
 
 <div class="event-card">
-
 <h3>Night Meet</h3>
-
 <p>June 12 • Chennai</p>
-
 </div>
 
 </div>
@@ -101,7 +96,7 @@ From supercars to street builds, every machine has a story.
 </section>
 
 
-<section class="gallery">
+<section class="gallery reveal" id="gallery">
 
 <h2>Community Moments</h2>
 
@@ -117,15 +112,15 @@ From supercars to street builds, every machine has a story.
 </section>
 
 
-<section class="instagram">
+<section class="instagram reveal">
 
 <h2>Follow the Movement</h2>
 
 <p>@madrasdriven</p>
 
-<a href="https://www.instagram.com/madrasdriven" target="_blank">
+<a href="https://www.instagram.com/madrasdriven">
 
-<button>View Instagram</button>
+<button>Visit Instagram</button>
 
 </a>
 
