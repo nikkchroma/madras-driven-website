@@ -229,3 +229,44 @@ grid-template-columns:1fr;
 
 }
 
+/* CAR MARQUEE */
+
+.car-marquee{
+background:#000;
+padding:40px 0;
+overflow:hidden;
+}
+
+.marquee{
+width:100%;
+overflow:hidden;
+}
+
+.marquee-content{
+display:flex;
+gap:20px;
+animation:scrollCars 20s linear infinite;
+}
+
+.marquee-content img{
+height:200px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.marquee-content img:hover{
+transform:scale(1.1);
+}
+
+@keyframes scrollCars{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
