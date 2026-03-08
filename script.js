@@ -1,15 +1,19 @@
-console.log("Madras Driven site running");
+console.log("Madras Driven site ready");
 
-/* Navbar scroll effect */
+/* loader */
 
-window.addEventListener("scroll", function(){
+window.addEventListener("load",function(){
 
-const nav = document.getElementById("navbar");
+setTimeout(function(){
 
-if(window.scrollY > 50){
-nav.classList.add("scrolled");
-}else{
-nav.classList.remove("scrolled");
-}
+document.getElementById("loader").style.opacity="0";
 
-});
+setTimeout(function(){
+
+document.getElementById("loader").style.display="none";
+
+},500);
+
+},2000);
+
+});;
