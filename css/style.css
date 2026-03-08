@@ -283,15 +283,15 @@ display:flex;
 justify-content:center;
 align-items:center;
 z-index:9999;
+transition:opacity 0.6s ease;
 }
 
 .loader-text{
-font-family:Bebas Neue;
+font-family:"Bebas Neue", sans-serif;
 font-size:90px;
 letter-spacing:6px;
 color:white;
-opacity:0;
-animation:logoReveal 2s forwards;
+animation:logoReveal 1.8s ease forwards;
 }
 
 @keyframes logoReveal{
