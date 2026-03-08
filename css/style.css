@@ -21,14 +21,17 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 10%;
-backdrop-filter:blur(10px);
-background:rgba(0,0,0,0.4);
-z-index:10;
+z-index:100;
+transition:0.4s;
+}
+
+header.scrolled{
+background:black;
 }
 
 .logo{
 font-family:Bebas Neue;
-font-size:30px;
+font-size:32px;
 letter-spacing:3px;
 }
 
@@ -36,7 +39,6 @@ nav a{
 margin-left:25px;
 text-decoration:none;
 color:white;
-font-size:14px;
 transition:0.3s;
 }
 
@@ -54,7 +56,6 @@ align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
-overflow:hidden;
 }
 
 .hero-video{
@@ -73,24 +74,30 @@ background:linear-gradient(to bottom, rgba(0,0,0,0.2), #0b0b0b);
 z-index:-1;
 }
 
-.hero-title{
-font-size:100px;
+.hero-content h1{
+font-size:110px;
 font-family:Bebas Neue;
+letter-spacing:4px;
 }
 
-.hero-sub{
+.hero-content p{
 margin-top:10px;
-font-size:20px;
+font-size:22px;
 }
 
 .hero-content button{
-margin-top:25px;
-padding:14px 40px;
-background:#ff2c2c;
+margin-top:30px;
+padding:15px 45px;
 border:none;
+background:#ff2c2c;
 color:white;
 font-weight:600;
 cursor:pointer;
+transition:0.3s;
+}
+
+.hero-content button:hover{
+transform:scale(1.1);
 }
 
 
@@ -102,8 +109,8 @@ text-align:center;
 }
 
 .about h2{
-font-size:40px;
 font-family:Bebas Neue;
+font-size:45px;
 margin-bottom:20px;
 }
 
@@ -132,8 +139,9 @@ transition:0.4s;
 }
 
 .event-card:hover{
-transform:translateY(-10px) scale(1.05);
+transform:translateY(-12px);
 border-color:#ff2c2c;
+box-shadow:0 0 20px rgba(255,44,44,0.4);
 }
 
 
@@ -147,36 +155,45 @@ text-align:center;
 .gallery-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
+gap:20px;
 margin-top:40px;
 }
 
-.gallery-grid img{
+.gallery-item{
+overflow:hidden;
+}
+
+.gallery-item img{
 width:100%;
-height:250px;
+height:260px;
 object-fit:cover;
 transition:0.4s;
 }
 
-.gallery-grid img:hover{
-transform:scale(1.08);
+.gallery-item:hover img{
+transform:scale(1.1);
 }
 
 
-/* INSTAGRAM */
+/* CTA */
 
-.instagram{
+.cta{
 padding:120px 10%;
 text-align:center;
 }
 
-.instagram button{
+.cta button{
 margin-top:20px;
-padding:14px 40px;
+padding:15px 45px;
 background:#ff2c2c;
 border:none;
 color:white;
 cursor:pointer;
+transition:0.3s;
+}
+
+.cta button:hover{
+transform:scale(1.1);
 }
 
 
@@ -186,8 +203,10 @@ footer{
 text-align:center;
 padding:40px;
 background:#111;
-margin-top:40px;
 }
+
+
+/* SCROLL ANIMATION */
 
 .reveal{
 opacity:0;
