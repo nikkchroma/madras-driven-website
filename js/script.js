@@ -1,18 +1,18 @@
-console.log("Madras Driven site ready");
+console.log("Madras Driven script loaded");
 
 /* loader fade out */
 
-window.addEventListener("load", () => {
+window.addEventListener("load", function(){
 
 const loader = document.getElementById("loader");
 
-setTimeout(() => {
+setTimeout(function(){
 
 loader.style.opacity = "0";
 
-setTimeout(() => {
+setTimeout(function(){
 loader.style.display = "none";
-}, 600);
+}, 500);
 
 }, 1800);
 
