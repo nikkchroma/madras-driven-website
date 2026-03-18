@@ -1,29 +1,24 @@
 console.log("Madras Driven script loaded");
 
-/* FIXED LOADER */
-document.addEventListener("DOMContentLoaded", function(){
+/* FORCE REMOVE LOADER */
 
-const loader = document.getElementById("loader");
+function removeLoader() {
+  const loader = document.getElementById("loader");
+  if (loader) {
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
 
-setTimeout(function(){
-  loader.style.opacity = "0";
+    setTimeout(() => {
+      loader.remove(); // completely removes it
+    }, 500);
+  }
+}
 
-  setTimeout(function(){
-    loader.style.display = "none";
-  }, 500);
+/* Run immediately */
+document.addEventListener("DOMContentLoaded", removeLoader);
 
-}, 1200);
+/* Backup (if above fails) */
+window.addEventListener("load", removeLoader);
 
-window.addEventListener("load", function(){
-
-const loader = document.getElementById("loader");
-
-loader.style.opacity = "0";
-
-setTimeout(function(){
-  loader.style.display = "none";
-}, 600);
-
-});
-
-});
+/* Emergency fallback */
+setTimeout(removeLoader, 2000);
