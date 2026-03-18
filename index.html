@@ -1,224 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Madras Driven</title>
 
-<link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+<!-- LOADER -->
 <div id="loader">
-<h1 class="loader-text">MADRAS DRIVEN</h1>
+  <h1>MADRAS DRIVEN</h1>
 </div>
 
-<header id="navbar">
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-sports-car-driving-5173/1080p.mp4">
+  </video>
 
-<div class="logo">MADRAS DRIVEN</div>
+  <div class="overlay"></div>
 
-<nav>
-
-<a href="#home">Home</a>
-<a href="#events">Events</a>
-<a href="#gallery">Gallery</a>
-<a href="#community">Community</a>
-
-</nav>
-
-</header>
-
-
-<section class="hero" id="home">
-
-<video autoplay muted loop class="hero-video">
-<source src="assets/hero.mp4" type="video/mp4">
-</video>
-
-<div class="hero-overlay"></div>
-
-<div class="hero-content">
-
-<h1>Madras Driven</h1>
-
-<p>Chennai's Automotive Culture</p>
-
-<button>Join The Community</button>
-
-</div>
-
+  <div class="hero-content">
+    <h1>MADRAS DRIVEN</h1>
+    <p>PURE STREET CULTURE</p>
+    <a href="#about" class="btn">ENTER</a>
+  </div>
 </section>
 
-<section class="car-marquee">
-
-<div class="marquee">
-
-<div class="marquee-content">
-
-<img src="assets/car1.jpg">
-<img src="assets/car2.jpg">
-<img src="assets/car3.jpg">
-<img src="assets/car4.jpg">
-<img src="assets/car5.jpg">
-<img src="assets/car6.jpg">
-<img src="assets/car7.jpg">
-<img src="assets/car8.jpg">
-<img src="assets/car9.jpg">
-<img src="assets/car10.jpg">
-<img src="assets/car11.jpg">
-<img src="assets/car12.jpg">
-<img src="assets/car13.jpg">
-<img src="assets/car14.jpg">
-
-</div>
-
-</div>
-
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>ABOUT</h2>
+  <p>
+    Madras Driven is Chennai’s automotive culture platform.  
+    Built for enthusiasts. Powered by passion.
+  </p>
 </section>
 
-
-<section class="about" id="community">
-
-<h2>Driven by Passion</h2>
-
-<p>
-
-A community built for enthusiasts who live for the sound
-of engines and the thrill of the drive.
-
-Madras Driven connects Chennai’s car culture through
-meets, cruises and motorsport events.
-
-</p>
-
+<!-- EVENT -->
+<section class="section dark">
+  <h2>NIGHT MEET</h2>
+  <p>Curated builds. Real street culture.</p>
+  <a href="#" class="btn">REGISTER</a>
 </section>
 
-
-<section class="events" id="events">
-
-<h2>Upcoming Events</h2>
-
-<div class="event-grid">
-
-<div class="event-card">
-<h3>Cars & Cocoa</h3>
-<p>April 20 • Chennai</p>
-</div>
-
-<div class="event-card">
-<h3>Sunday Cruise</h3>
-<p>May 5 • ECR</p>
-</div>
-
-<div class="event-card">
-<h3>Night Meet</h3>
-<p>June 12 • Chennai</p>
-</div>
-
-</div>
-
+<!-- GALLERY -->
+<section class="section">
+  <h2>GALLERY</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8">
+    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+    <img src="https://images.unsplash.com/photo-1549921296-3ecf9c7f0c6c">
+  </div>
 </section>
 
-
-<section class="galleryl" id="gallery">
-
-<h2>Community Moments</h2>
-
-<div class="gallery-grid">
-
-<div class="gallery-item">
-<img src="assets/car1.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car2.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car3.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car4.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car5.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car6.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car7.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car8.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car9.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car10.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car11.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car12.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car13.jpg">
-</div>
-
-<div class="gallery-item">
-<img src="assets/car14.jpg">
-</div>
-
-</div>
-
+<!-- INSTAGRAM -->
+<section class="section dark">
+  <h2>FOLLOW US</h2>
+  <p>@madrasdriven</p>
+  <a href="https://www.instagram.com/madrasdriven/" target="_blank" class="btn">OPEN INSTAGRAM</a>
 </section>
 
-
-<section class="cta">
-
-<h2>Be Part of the Movement</h2>
-
-<a href="https://www.instagram.com/madrasdriven">
-
-<button>Follow on Instagram</button>
-
-</a>
-
-</section>
-
-
+<!-- FOOTER -->
 <footer>
-
-<p>© 2026 Madras Driven</p>
-
+  © 2026 MADRAS DRIVEN
 </footer>
 
-
-<script src="js/script.js"></script>
-
+<script src="script.js"></script>
 </body>
-
 </html>
